@@ -8,20 +8,23 @@ Math::Cephes - perl interface to the cephes math library
 
 =head1 DESCRIPTION
 
-  This module provides an interface to over 150 functions of the 
-  cephes math library of Stephen Moshier. No functions are exported 
-  by default, but rather must be imported explicitly, as in
+THIS MODULE IS LOOKING FOR A NEW HOME. THAT COULD BE YOU!
+Contact modules@perl.org to take over maintenance of this module.
+
+This module provides an interface to over 150 functions of the
+cephes math library of Stephen Moshier. No functions are exported
+by default, but rather must be imported explicitly, as in
 
      use Math::Cephes qw(sin cos);
 
-  There are a number of export tags defined which allow
-  importing groups of functions:
+There are a number of export tags defined which allow
+importing groups of functions:
 
 =over 4
 
 =item  use Math::Cephes qw(:constants);
 
-  imports the variables
+imports the variables
 
   $PI      :   3.14159265358979323846      #  pi
   $PIO2    :   1.57079632679489661923      #  pi/2
@@ -35,7 +38,7 @@ Math::Cephes - perl interface to the cephes math library
   $THPIO4  :   2.35619449019234492885      #  3*pi/4
   $TWOOPI  :   0.636619772367581343075535  #  2/pi
 
-  As well, there are 4 machine-specific numbers available:
+As well, there are 4 machine-specific numbers available:
 
    $MACHEP : machine roundoff error
    $MAXLOG : maximum log on the machine
@@ -88,7 +91,7 @@ Math::Cephes - perl interface to the cephes math library
 
 =item  use Math::Cephes qw(:cmplx);
 
-  imports 
+imports 
 
  new_cmplx: create a new complex number object
  cabs:  Complex absolute value

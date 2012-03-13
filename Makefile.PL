@@ -1,6 +1,15 @@
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 
+print <<"HERE";
+---------------------------------------------------------------------
+
+THE Math::Cephes MODULE IS LOOKING FOR A NEW HOME. THAT COULD BE YOU!
+Contact modules@perl.org to take over maintenance of this module.
+
+---------------------------------------------------------------------
+HERE
+
 use strict;
 use ExtUtils::MakeMaker;
 use Config;
@@ -78,7 +87,7 @@ elsif ($is_sol) {
 elsif ($is_dar) {
     require POSIX;
     my $machine = (POSIX::uname())[4];
-    if ($machine eq 'i386') {
+    if ($machine eq 'i386' or $machine eq 'x86_64') {
         $defs{IBMPC} = 1;
     }
     else {
