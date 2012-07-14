@@ -8,23 +8,20 @@ Math::Cephes - perl interface to the cephes math library
 
 =head1 DESCRIPTION
 
-THIS MODULE IS LOOKING FOR A NEW HOME. THAT COULD BE YOU!
-Contact modules@perl.org to take over maintenance of this module.
-
-This module provides an interface to over 150 functions of the
-cephes math library of Stephen Moshier. No functions are exported
-by default, but rather must be imported explicitly, as in
+  This module provides an interface to over 150 functions of the 
+  cephes math library of Stephen Moshier. No functions are exported 
+  by default, but rather must be imported explicitly, as in
 
      use Math::Cephes qw(sin cos);
 
-There are a number of export tags defined which allow
-importing groups of functions:
+  There are a number of export tags defined which allow
+  importing groups of functions:
 
 =over 4
 
 =item  use Math::Cephes qw(:constants);
 
-imports the variables
+  imports the variables
 
   $PI      :   3.14159265358979323846      #  pi
   $PIO2    :   1.57079632679489661923      #  pi/2
@@ -38,7 +35,7 @@ imports the variables
   $THPIO4  :   2.35619449019234492885      #  3*pi/4
   $TWOOPI  :   0.636619772367581343075535  #  2/pi
 
-As well, there are 4 machine-specific numbers available:
+  As well, there are 4 machine-specific numbers available:
 
    $MACHEP : machine roundoff error
    $MAXLOG : maximum log on the machine
@@ -91,7 +88,7 @@ As well, there are 4 machine-specific numbers available:
 
 =item  use Math::Cephes qw(:cmplx);
 
-imports 
+  imports 
 
  new_cmplx: create a new complex number object
  cabs:  Complex absolute value
@@ -4739,9 +4736,21 @@ imports
 
 =back
 
+=head1 MAINTAINER
+
+Shlomi Fish, L<http://www.shlomifish.org/>,
+L<https://metacpan.org/author/SHLOMIF> .
+
 =head1 BUGS
 
- Please report any to Randy Kobes <randy@theoryx5.uwinnipeg.ca>
+Please report any on the rt.cpan.org interface:
+L<https://rt.cpan.org/Dist/Display.html?Queue=Math-Cephes>
+
+=head1 VERSION CONTROL
+
+This distribution is maintained in this GitHub repository:
+
+L<https://github.com/shlomif/Math-Cephes>.
 
 =head1 SEE ALSO
 
@@ -4769,6 +4778,9 @@ of Karl Glazebrook <kgb@zzoepp.aao.gov.au>.
 The perl interface is copyright 2000, 2002 by Randy Kobes.
 This library is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
+
+Perl interface maintained by Shlomi Fish starting from 2012. All
+explicit or implicit copyrights on the changes are disclaimed by him.
 
 =cut
 
