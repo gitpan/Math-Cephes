@@ -1,7 +1,7 @@
 ---
 abstract: 'Perl interface to the math cephes library'
 author:
-  - 'Randy Kobes <r.kobes@uwinnipeg.ca>'
+  - 'Shlomi Fish <shlomif@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 0
 configure_requires:
@@ -18,4 +18,4 @@ no_index:
     - t
     - inc
 requires: {}
-version: 0.51
+version: 0.52
