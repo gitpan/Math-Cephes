@@ -4,7 +4,7 @@
       "Shlomi Fish <shlomif@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132661",
    "license" : [
       "unknown"
    ],
@@ -35,5 +35,10 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.5302"
+   "resources" : {
+      "repository" : {
+         "url" : "https://github.com/shlomif/Math-Cephes"
+      }
+   },
+   "version" : "0.5303"
 }
