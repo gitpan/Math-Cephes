@@ -1,6 +1,7 @@
 ############# Class : cmplx ##############
 package Math::Cephes::Complex;
 use strict;
+use warnings;
 use vars qw(%OWNER %ITERATORS @ISA 
 	    @EXPORT_OK %EXPORT_TAGS $VERSION);
 require Math::Cephes;
@@ -16,7 +17,7 @@ require Exporter;
 
 %OWNER = ();
 %ITERATORS = ();
-$VERSION = '0.51';
+$VERSION = '0.5304';
 
 *swig_r_get = *Math::Cephesc::cmplx_r_get;
 *swig_r_set = *Math::Cephesc::cmplx_r_set;

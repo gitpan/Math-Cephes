@@ -7,8 +7,8 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132661'
-license: unknown
+generated_by: 'ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -17,7 +17,8 @@ no_index:
   directory:
     - t
     - inc
-requires: {}
+requires:
+  perl: 5.008
 resources:
   repository: https://github.com/shlomif/Math-Cephes
-version: 0.5303
+version: 0.5304

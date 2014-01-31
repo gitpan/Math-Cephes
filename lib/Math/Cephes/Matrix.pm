@@ -1,12 +1,13 @@
 package Math::Cephes::Matrix;
 use strict;
+use warnings;
 use vars qw(@EXPORT_OK $VERSION);
 
 require Exporter;
 *import = \&Exporter::import;
 @EXPORT_OK = qw(mat);
 
-$VERSION = '0.51';
+$VERSION = '0.5304';
 
 require Math::Cephes;
 

@@ -1,6 +1,7 @@
 ############# Class : fract ##############
 package Math::Cephes::Fraction;
 use strict;
+use warnings;
 use vars qw(%OWNER @ISA %ITERATORS 
 	    @EXPORT_OK %EXPORT_TAGS $VERSION);
 
@@ -11,7 +12,7 @@ my @fract = qw(euclid fract mixed_fract);
 @EXPORT_OK = (@fract);
 %EXPORT_TAGS = ('fract' => [@fract]);
 
-$VERSION = '0.51';
+$VERSION = '0.5304';
 #use Math::Cephes qw(new_fract euclid);
 require Math::Cephes;
 @ISA = qw( Math::Cephes );
